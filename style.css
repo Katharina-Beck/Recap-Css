@@ -9,7 +9,28 @@ html {
   font-size: 16px;
 }
 
+@media screen and (max-width: 600px) {
+  .content {
+    display: block;
+  }
+}
+
 .header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 1rem 2rem;
+  background-color: #6a1cc3;
+  margin-block: 0;
+  margin-inline: auto;
+}
+
+.header-button {
+  all: unset;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
 }
 
 h1 {
@@ -31,4 +52,9 @@ h2 {
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.student-git {
+  display: grid;
+  grid-template-columns: ;
 }
