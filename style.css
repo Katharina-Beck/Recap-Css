@@ -2,6 +2,10 @@
 *::before,
 **::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 html {
   background-color: #fbfbfb;
@@ -12,6 +16,7 @@ html {
 @media screen and (max-width: 600px) {
   .content {
     display: block;
+    position: center;
   }
 }
 
@@ -37,7 +42,6 @@ h1 {
   font-weight: 600;
   line-height: 19px;
   letter-spacing: 0em;
-  text-align: left;
   color: #fbfbfb;
   text-align: center;
 }
@@ -53,8 +57,9 @@ h2 {
   letter-spacing: 0em;
   text-align: left;
 }
-
-.student-git {
-  display: grid;
-  grid-template-columns: ;
+.student-nav {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
