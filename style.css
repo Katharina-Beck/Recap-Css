@@ -42,6 +42,12 @@ html {
 
 /****Main Styles****/
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -96,5 +102,25 @@ a {
 }
 
 strong {
+  color: #6a1cc3;
+}
+.nav-dropdown {
+  position: relative;
+}
+
+menu {
+  background-color: #fbfbfb;
+  list-style-type: none;
+  padding: 1rem;
+  margin-block: 0;
+  position: absolute;
+  right: -600%;
+  transition: right 200ms;
+}
+menu > li + li {
+  margin-top: 1rem;
+}
+
+menu a {
   color: #6a1cc3;
 }
