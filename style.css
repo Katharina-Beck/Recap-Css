@@ -4,9 +4,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  list-style: none;
 }
+
 html {
   background-color: #fbfbfb;
   font-family: "Montserrat", sans-serif;
@@ -21,8 +20,8 @@ html {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
+  width: 600px;
+  display: block;
   position: relative;
   padding: 1rem 2rem;
   background-color: #6a1cc3;
@@ -33,9 +32,10 @@ html {
 .header-button {
   all: unset;
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
+  color: white;
 }
 
 h1 {
@@ -45,21 +45,48 @@ h1 {
   color: #fbfbfb;
   text-align: center;
 }
+
 h2 {
-  width: 263px;
-  height: 13px;
-  top: 135px;
-  left: 31px;
-  font-family: "Montserrat";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 18px;
-  letter-spacing: 0em;
-  text-align: left;
+  font-size: 16px;
+  display: grid;
+  justify-content: space-around;
 }
-.student-nav {
+
+.section-students {
+  display: block;
+}
+
+nav {
+  display: grid;
+  justify-content: space-around;
+  padding: 5px 20px;
+  background: #fbfbfb;
+  list-style-type: none;
+}
+.fellow-students {
+  display: grid;
+  justify-content: space-around;
+}
+.search {
+  display: grid;
+  justify-content: space-around;
+}
+
+nav {
+  display: grid;
+  grid-template: column;
+  justify-content: space-around;
+}
+
+.full-students {
+  padding: 8px;
+}
+.strong {
+  text-decoration-line: none;
+}
+a {
   text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+}
+span {
+  text-decoration-line: underline;
 }
