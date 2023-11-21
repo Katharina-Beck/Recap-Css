@@ -13,12 +13,6 @@ html {
   font-size: 16px;
 }
 
-@media screen and (max-width: 600px) {
-  .content {
-    display: block;
-    position: center;
-  }
-}
 /****Header Styles****/
 
 .header {
@@ -41,17 +35,16 @@ html {
 }
 
 /****Main Styles****/
-
-.flex-container {
+body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  background-color: #fbfbfb;
   align-items: center;
-}
-
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: space-around;
+  width: 600px;
+  margin: auto;
+  background-color: white;
+  position: absolute;
 }
 
 h1 {
@@ -68,59 +61,12 @@ h2 {
   justify-content: space-around;
 }
 
-.section-students {
-  display: block;
-}
-
-.fellow-students {
-  display: grid;
-  justify-content: space-around;
-}
-.search {
-  display: grid;
-  justify-content: space-around;
-}
-
-.full-students {
-  padding: 8px;
-}
-
-/****Nav Styles****/
-
 nav {
-  display: grid;
-  grid-template: column;
-  justify-content: space-around;
-  padding: 5px 20px;
   background: #fbfbfb;
-  list-style-type: none;
-  border: #6a1cc3;
-}
-
-a {
-  color: #6a1cc3;
-}
-
-strong {
-  color: #6a1cc3;
-}
-.nav-dropdown {
-  position: relative;
-}
-
-menu {
-  background-color: #fbfbfb;
-  list-style-type: none;
-  padding: 1rem;
-  margin-block: 0;
-  position: absolute;
-  right: -600%;
-  transition: right 200ms;
-}
-menu > li + li {
-  margin-top: 1rem;
-}
-
-menu a {
-  color: #6a1cc3;
+  box-shadow: #6a1cc3;
+  padding: 1.5rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
